@@ -1,0 +1,59 @@
+{
+  "name": "provider-node",
+  "version": "1.0.0",
+  "description": "LLM Share Network Provider Node - Share your API quota and earn rewards",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "package": "node scripts/package.js",
+    "release": "node scripts/release.js",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write src/**/*.{ts,tsx}"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.5.0",
+    "libp2p": "^1.2.0",
+    "libp2p-bootstrap": "^1.0.0",
+    "libp2p-kad-dht": "^1.0.0",
+    "libp2p-relay": "^1.0.0",
+    "libp2p-noise": "^4.0.0",
+    "ethers": "^6.11.0",
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "winston": "^3.11.0",
+    "dotenv": "^16.3.0",
+    "uuid": "^9.0.0",
+    "joi": "^17.11.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.0",
+    "@tauri-apps/api": "^1.5.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/express": "^4.17.21",
+    "@types/uuid": "^9.0.7",
+    "@types/node": "^20.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "vitest": "^1.2.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "prettier": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
